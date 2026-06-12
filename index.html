@@ -15,8 +15,10 @@
 <body>
     <header id="header">
         <div id="leftHeader">
-            <img class="imageLogo" src="public/images/logo.png" alt="logo">
-            <div class="logo"><b>Diplo</b><i>Tech</i></div>
+            <div class="logoRow">
+                <img class="imageLogo" src="public/images/logo.png" alt="logo">
+                <div class="logo"><b>Diplo</b><i>Tech</i></div>
+            </div>
             <div id="title">Diplomado de Innovación en Gestión de Proyectos</div>
             <div id="description">
                 El diplomado de innovación en gestión de proyectos tiene como objetivo formar profesionales capaces de afrontar retos para crear, mejorar y perfeccionar diversos procesos en el ámbito de gestión de proyectos.
@@ -40,17 +42,24 @@
                 <input type="email" id="mail" name="mail" placeholder="ej. juanmartinez@correo.com" required><br>
                 <label for="number">Teléfono:</label>
                 <input type="tel" id="number" name="number" placeholder="ej. 5512345678" required><br>
-                <label for="send" id="confirmationMessage">Message</label>
+                <label for="send" id="confirmationMessage">Espera un momento, tus datos están siendo enviados</label>
                 <input type="submit" value="Enviar" id="send">
             </form>
         </div>
     </header>
     <nav id="menu">
-        <div class="sectionMenu"><a class="linkMenu" href="#program">Programa</a></div>
-        <div class="sectionMenu"><a class="linkMenu" href="#entry">Ingreso</a></div>
-        <div class="sectionMenu"><a class="linkMenu" href="#egress">Egreso</a></div>
-        <div class="sectionMenu"><a class="linkMenu" href="#methodology">Metodología</a></div>
-        <div class="sectionMenu"><a class="linkMenu" href="#studies">Plan currícular</a></div>
+        <button id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div id="navLinks">
+            <div class="sectionMenu"><a class="linkMenu" href="#program">Programa</a></div>
+            <div class="sectionMenu"><a class="linkMenu" href="#entry">Ingreso</a></div>
+            <div class="sectionMenu"><a class="linkMenu" href="#egress">Egreso</a></div>
+            <div class="sectionMenu"><a class="linkMenu" href="#methodology">Metodología</a></div>
+            <div class="sectionMenu"><a class="linkMenu" href="#studies">Plan currícular</a></div>
+        </div>
     </nav>
     <div id="general">
         <section id="program">
@@ -179,10 +188,10 @@
                         <img src="public/images/classes.png" alt="classes" class="featureImage"  id="featureClasses">
                         <div class="featureText">Clases magistrales</div>
                     </div>
-                    <divsss class="featureMethodology">
+                    <div class="featureMethodology">
                         <img src="public/images/cases.png" alt="study cases" class="featureImage">
                         <div class="featureText">Casos de estudio y de refuerzo</div>
-                    </divsss>
+                    </div>
                     <div class="featureMethodology">
                         <img src="public/images/platform.png" alt="platform" class="featureImage">
                         <div class="featureText">Plataforma de aprendizaje virtual</div>

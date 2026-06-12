@@ -7,32 +7,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que el formulario se envíe de la manera tradicional
+    document.getElementById('confirmationMessage').style.color = 'black';
     var name = document.getElementById('name').value;
     var mail = document.getElementById('mail').value;
     var number = phoneInput.getNumber();
-    fetch('https://thawing-mesa-75969-77a2012df85e.herokuapp.com/send-whatsapp', {
+    fetch('https://stormy-shore-91268-66b247c96421.herokuapp.com/send-whatsapp', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         to: number,
-        body: `Hola ${name}, pronto alguno de nuestros asesores se comunicará contigo al ${number}. Crea tu cuenta en https://nanecorner.github.io/public/home.html. Saludos de parte del team DiploTech.`
+        body: `Hola ${name}, pronto alguno de nuestros asesores se comunicará contigo al ${number}. Crea tu cuenta en https://teamdiplotech.github.io/public/home.html. Saludos de parte del team DiploTech.`
       })
     })
     .then(response => response.json())
     .then(data => {
       if (data.success) {
-        document.getElementById('confirmationMessage').style.display = 'block';
-        setTimeout(function() {
-          document.getElementById('confirmationMessage').style.display = 'none';
-        }, 10000);
+        console.log('Mensaje enviado exitosamente!', data.status, data.text);
       } else {
         console.error('Error al enviar el mensaje de WhatsApp');
       }
     })
     .catch(error => console.error('Error:', error));
-    fetch('https://thawing-mesa-75969-77a2012df85e.herokuapp.com/send-email', {
+    fetch('https://stormy-shore-91268-66b247c96421.herokuapp.com/send-email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -69,4 +67,25 @@ document.addEventListener('DOMContentLoaded', function() {
     })
     .catch(error => console.error('Error:', error));
   });
+
+  // ── Hamburger menu toggle ──────────────────────────────────────
+  const menuToggle = document.getElementById('menuToggle');
+  const navLinks   = document.getElementById('navLinks');
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener('click', function() {
+      const isOpen = navLinks.classList.toggle('open');
+      menuToggle.classList.toggle('open', isOpen);
+      menuToggle.setAttribute('aria-expanded', isOpen.toString());
+    });
+
+    // Close menu when a link is clicked (on mobile)
+    navLinks.querySelectorAll('.linkMenu').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('open');
+        menuToggle.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  }
 });
