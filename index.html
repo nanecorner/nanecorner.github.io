@@ -1,22 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diplomado de Innovación en Gestión de Proyectos — DiploTech. Forma parte de la siguiente generación de líderes en gestión de proyectos con tecnología.">
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
-    <title>Diplotech</title>
+    <title>DiploTech — Diplomado en Gestión de Proyectos</title>
     <link rel="icon" href="public/images/icon.png" type="image/png">
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script type="text/javascript" src="public/js/main.js" defer></script>
 </head>
 <body>
+    <!-- ═══════════════════════════════════════════
+         HERO HEADER
+         ═══════════════════════════════════════════ -->
     <header id="header">
         <div id="leftHeader">
             <div class="logoRow">
-                <img class="imageLogo" src="public/images/logo.png" alt="logo">
+                <img class="imageLogo" src="public/images/logo.png" alt="logo DiploTech">
                 <div class="logo"><b>Diplo</b><i>Tech</i></div>
             </div>
             <div id="title">Diplomado de Innovación en Gestión de Proyectos</div>
@@ -34,19 +38,23 @@
         <div id="rightHeader">
             <form id="contactForm">
                 <p>¡Empieza tu proceso!</p>
-                <label for="name">Nombre(s):</label>
-                <input type="text" id="name" name="name" placeholder="ej. Juan Antonio" required><br>
-                <label for="lastName">Apellido(s):</label>
-                <input type="text" id="lastName" name="lastName" placeholder="ej. Martínez Reyes" required><br>
-                <label for="mail">Correo electrónico:</label>
-                <input type="email" id="mail" name="mail" placeholder="ej. juanmartinez@correo.com" required><br>
-                <label for="number">Teléfono:</label>
-                <input type="tel" id="number" name="number" placeholder="ej. 5512345678" required><br>
+                <label for="name">Nombre(s)</label>
+                <input type="text" id="name" name="name" placeholder="ej. Juan Antonio" required>
+                <label for="lastName">Apellido(s)</label>
+                <input type="text" id="lastName" name="lastName" placeholder="ej. Martínez Reyes" required>
+                <label for="mail">Correo electrónico</label>
+                <input type="email" id="mail" name="mail" placeholder="ej. juanmartinez@correo.com" required>
+                <label for="number">Teléfono</label>
+                <input type="tel" id="number" name="number" placeholder="ej. 5512345678" required>
                 <label for="send" id="confirmationMessage">Espera un momento, tus datos están siendo enviados</label>
                 <input type="submit" value="Enviar" id="send">
             </form>
         </div>
     </header>
+
+    <!-- ═══════════════════════════════════════════
+         STICKY NAV
+         ═══════════════════════════════════════════ -->
     <nav id="menu">
         <button id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinks">
             <span></span>
@@ -61,158 +69,128 @@
             <div class="sectionMenu"><a class="linkMenu" href="#studies">Plan currícular</a></div>
         </div>
     </nav>
+
+    <!-- ═══════════════════════════════════════════
+         MAIN CONTENT
+         ═══════════════════════════════════════════ -->
     <div id="general">
+
+        <!-- PROGRAMA -->
         <section id="program">
-            <div class="sectionTitle">
-                <div class="arrows">
-                    <img src="public/images/arrow.png" alt="up">
-                    <img src="public/images/arrow.png" alt="down" id="down">
-                </div>
-                <div class="links">
-                    <a href="#header" class="link"></a>
-                    <a href="#entry" class="link"></a>
-                </div>
+            <div class="sectionTitle reveal">
                 <p>Conoce tu programa</p>
                 <div class="divisionTitle" id="divisionProgram"></div>
-            </div> 
-            <div class="bodyProgram">
+            </div>
+            <div class="bodyProgram reveal">
                 El diplomado de Innovación en Gestión de Proyectos fue creado para profesionales:
                 <ul>
                     <li>De áreas administrativas.</li>
                     <li>De áreas de producción de proyectos.</li>
-                    <li>Que buscan inovar en sus instituciones usando la tecnología para mejorar procesos.</li>
+                    <li>Que buscan innovar en sus instituciones usando la tecnología para mejorar procesos.</li>
                 </ul>
             </div>
         </section>
+
+        <!-- INGRESO -->
         <section id="entry">
-            <div class="sectionTitle">
-                <div class="arrows">
-                    <img src="public/images/arrow.png" alt="up">
-                    <img src="public/images/arrow.png" alt="down" id="down">
-                </div>
-                <div class="links">
-                    <a href="#program" class="link"></a>
-                    <a href="#egress" class="link"></a>
-                </div>
+            <div class="sectionTitle reveal">
                 <p>Competencias de ingreso</p>
                 <div class="divisionTitle" id="divisionEntry"></div>
-            </div> 
+            </div>
             <div class="bodyEntry">
                 <div class="leftProgram">
-                    <div class="elementEntry">
-                        <img class="elementEntryImage" src="public/images/user.png" alt="proactivity">
+                    <div class="elementEntry reveal">
+                        <img class="elementEntryImage" src="public/images/user.png" alt="proactividad">
                         <div class="subDivisionEntry"></div>
-                        <div class="elementEntryText">PROACTIVIDAD</div>
-                    </div>                            
-                    <div class="elementEntry">
-                        <img class="elementEntryImage" src="public/images/thinking.png" alt="critical thinking">
+                        <div class="elementEntryText">Proactividad</div>
+                    </div>
+                    <div class="elementEntry reveal">
+                        <img class="elementEntryImage" src="public/images/thinking.png" alt="pensamiento crítico">
                         <div class="subDivisionEntry"></div>
-                        <div class="elementEntryText">PENSAMIENTO CRÍTICO</div>
-                    </div>                          
+                        <div class="elementEntryText">Pensamiento Crítico</div>
+                    </div>
                 </div>
                 <div class="rightProgram">
-                    <div class="elementEntry">
-                        <img class="elementEntryImage" src="public/images/creativity.png" alt="creativity">
+                    <div class="elementEntry reveal">
+                        <img class="elementEntryImage" src="public/images/creativity.png" alt="creatividad">
                         <div class="subDivisionEntry"></div>
-                        <div class="elementEntryText">CREATIVIDAD</div>
-                    </div> 
-                    <div class="elementEntry">
-                        <img class="elementEntryImage" src="public/images/organization.png" alt="organization">
+                        <div class="elementEntryText">Creatividad</div>
+                    </div>
+                    <div class="elementEntry reveal">
+                        <img class="elementEntryImage" src="public/images/organization.png" alt="organización">
                         <div class="subDivisionEntry"></div>
-                        <div class="elementEntryText">ORGANIZACIÓN</div>
-                    </div>                              
-                </div>
-            </div> 
-        </section>
-        <section id="egress">
-            <div class="sectionTitle">
-                <div class="arrows">
-                    <img src="public/images/arrow.png" alt="up">
-                    <img src="public/images/arrow.png" alt="down" id="down">
-                </div>
-                <div class="links">
-                    <a href="#entry" class="link"></a>
-                    <a href="#methodology" class="link"></a>
-                </div>
-                <p>Competencias de egreso</p>
-                <div class="divisionTitle" id="divisionEgress"></div>
-            </div> 
-            <div class="bodyEgress">
-                <div class="elementEgress">
-                    <img src="public/images/teams.png" alt="teamwork" class="egressImage">
-                    <div class="elementEgressText">EQUIPOS DE TRABAJO</div>
-                </div>
-                <div class="subDivisionEgress"></div>
-                <div class="elementEgress">
-                    <img src="public/images/analize.png" alt="analize" class="egressImage">
-                    <div class="elementEgressText">ANÁLISIS DE PROBLEMAS Y TOMA DE DECISIONES</div>
-                </div>
-                <div class="subDivisionEgress"></div>
-                <div class="elementEgress">
-                    <img src="public/images/positive.png" alt="positive influence" class="egressImage">
-                    <div class="elementEgressText">INFLUENCIA POSITIVA</div>
-                </div>
-                <div class="subDivisionEgress"></div>
-                <div class="elementEgress">
-                    <img src="public/images/leadership.png" alt="leadership" class="egressImage" id="leadership">
-                    <div class="elementEgressText">LIDERAZGO</div>
-                </div>
-                <div class="subDivisionEgress"></div>
-                <div class="elementEgress">
-                    <img src="public/images/crisis.png" alt="crisis management" class="egressImage">
-                    <div class="elementEgressText">MANEJO DE CRISIS</div>
+                        <div class="elementEntryText">Organización</div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <!-- EGRESO -->
+        <section id="egress">
+            <div class="sectionTitle reveal">
+                <p>Competencias de egreso</p>
+                <div class="divisionTitle" id="divisionEgress"></div>
+            </div>
+            <div class="bodyEgress">
+                <div class="elementEgress reveal">
+                    <img src="public/images/teams.png" alt="equipos de trabajo" class="egressImage">
+                    <div class="elementEgressText">Equipos de Trabajo</div>
+                </div>
+                <div class="elementEgress reveal">
+                    <img src="public/images/analize.png" alt="análisis" class="egressImage">
+                    <div class="elementEgressText">Análisis de Problemas y Toma de Decisiones</div>
+                </div>
+                <div class="elementEgress reveal">
+                    <img src="public/images/positive.png" alt="influencia positiva" class="egressImage">
+                    <div class="elementEgressText">Influencia Positiva</div>
+                </div>
+                <div class="elementEgress reveal">
+                    <img src="public/images/leadership.png" alt="liderazgo" class="egressImage" id="leadership">
+                    <div class="elementEgressText">Liderazgo</div>
+                </div>
+                <div class="elementEgress reveal">
+                    <img src="public/images/crisis.png" alt="manejo de crisis" class="egressImage">
+                    <div class="elementEgressText">Manejo de Crisis</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- METODOLOGÍA -->
         <section id="methodology">
-            <div class="sectionTitle">
-                <div class="arrows">
-                    <img src="public/images/arrow.png" alt="up">
-                    <img src="public/images/arrow.png" alt="down" id="down">
-                </div>
-                <div class="links">
-                    <a href="#egress" class="link"></a>
-                    <a href="#studies" class="link"></a>
-                </div>
+            <div class="sectionTitle reveal">
                 <p>Metodología docente</p>
                 <div class="divisionTitle" id="divisionMethodology"></div>
             </div>
             <div class="bodyMethodology">
-                <p>Mediante un modelo de aprendizaje<b> ONLINE</b></p>
+                <p class="reveal">Mediante un modelo de aprendizaje<b> ONLINE</b></p>
                 <div class="featuresMethodology">
-                    <div class="featureMethodology">
-                        <img src="public/images/materials.png" alt="materials" class="featureImage">
+                    <div class="featureMethodology reveal">
+                        <img src="public/images/materials.png" alt="materiales" class="featureImage">
                         <div class="featureText">Materiales de estudio didácticos</div>
                     </div>
-                    <div class="featureMethodology">
-                        <img src="public/images/classes.png" alt="classes" class="featureImage"  id="featureClasses">
+                    <div class="featureMethodology reveal">
+                        <img src="public/images/classes.png" alt="clases" class="featureImage" id="featureClasses">
                         <div class="featureText">Clases magistrales</div>
                     </div>
-                    <div class="featureMethodology">
-                        <img src="public/images/cases.png" alt="study cases" class="featureImage">
+                    <div class="featureMethodology reveal">
+                        <img src="public/images/cases.png" alt="casos de estudio" class="featureImage">
                         <div class="featureText">Casos de estudio y de refuerzo</div>
                     </div>
-                    <div class="featureMethodology">
-                        <img src="public/images/platform.png" alt="platform" class="featureImage">
+                    <div class="featureMethodology reveal">
+                        <img src="public/images/platform.png" alt="plataforma virtual" class="featureImage">
                         <div class="featureText">Plataforma de aprendizaje virtual</div>
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- PLAN CURRICULAR -->
         <section id="studies">
-            <div class="sectionTitle">
-                <div class="arrows">
-                    <img src="public/images/arrow.png" alt="up">
-                    <img src="public/images/arrow.png" alt="down" id="down">
-                </div>
-                <div class="links">
-                    <a href="#methodology" class="link"></a>
-                    <a href="#footer" class="link"></a>
-                </div>
+            <div class="sectionTitle reveal">
                 <p>Plan currícular</p>
                 <div class="divisionTitle" id="divisionStudies"></div>
             </div>
-            <div class="bodyStudies">
+            <div class="bodyStudies reveal">
                 <div class="leftStudies">
                     <div class="first">Gestión y administración</div>
                     <div class="second">Tecnologías de la información</div>
@@ -225,36 +203,41 @@
                             <div class="purple"></div>
                             <div class="green"></div>
                             <div class="blue"></div>
-                        </div>                            
+                        </div>
                         <div class="elementTable">
                             <p>2°</p>
                             <div class="green"></div>
                             <div class="purple double"></div>
-                        </div>                        
+                        </div>
                         <div class="elementTable">
                             <p>3°</p>
                             <div class="purple double"></div>
                             <div class="blue"></div>
-                        </div>                            
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+
+    </div><!-- /#general -->
+
+    <!-- ═══════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════ -->
     <div id="footer">
         <div class="infoFooter">
             <div class="logoFooter">
-                <img class="imageLogo" src="public/images/logo.png" alt="logo">
+                <img class="imageLogo" src="public/images/logo.png" alt="logo DiploTech">
                 <div class="logo"><b>Diplo</b><i>Tech</i></div>
             </div>
             <div class="contact">
-                <p>Contacto</p><br>
-                800 7823 92 73 <br>
+                <p>Contacto</p>
+                800 7823 92 73<br>
                 info.diplotech@gmail.com
             </div>
         </div>
         <div class="notice">
-            SE PROHÍBE LA REPRODUCCIÓN TOTAL O PARCIAL DEL SITIO O CUALQUIER CONTENIDO DEL MISMO. D.R.© DIPLOTECH , MÉXICO. 2023 AVE. SANTA FÉ 104 NTE. COL. CALETTO C.P. 84598 | GUADALAJARA, JALISCO | MÉXICO.
+            SE PROHÍBE LA REPRODUCCIÓN TOTAL O PARCIAL DEL SITIO O CUALQUIER CONTENIDO DEL MISMO. D.R.© DIPLOTECH, MÉXICO. 2023 AVE. SANTA FÉ 104 NTE. COL. CALETTO C.P. 84598 | GUADALAJARA, JALISCO | MÉXICO.
         </div>
     </div>
 </body>
